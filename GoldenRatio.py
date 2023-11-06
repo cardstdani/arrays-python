@@ -9,3 +9,13 @@ for i in range(2, precision):
 print("Fibonacci sequence: " + str(fibonacciSequence))
 phi = Decimal(fibonacciSequence[len(fibonacciSequence) - 1]) / fibonacciSequence[len(fibonacciSequence) - 2]
 print("Golden ratio: " + str(phi))
+
+
+
+fibonacciSequence = [0, 1, 1]
+iterations = 200
+
+for i in range(2, iterations):
+    fibonacciSequence.append(fibonacciSequence[i] + fibonacciSequence[i - 1])
+
+print("Fibonacci sequence: " + str(fibonacciSequence))
